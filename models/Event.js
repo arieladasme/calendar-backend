@@ -23,7 +23,7 @@ const EventSchema = Schema({
   },
 })
 
-// reemplazo _id por id
+// reemplazo _id por id (revisar)
 EventSchema.method('toJSON', function () {
   const { __v, _id, ...object } = this.toObject()
   object.id = _id
